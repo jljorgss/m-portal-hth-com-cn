@@ -1,2 +1,32 @@
-# m-portal-hth-com-cn
-华体会 - https://m-portal-hth.com.cn
+# 华体会 - 体育与娱乐综合门户
+
+欢迎访问 **华体会** 官方门户网站：[https://m-portal-hth.com.cn](https://m-portal-hth.com.cn)
+
+## 简介
+
+华体会是一个专注于体育赛事、娱乐互动与综合信息服务的在线平台。通过访问 [https://m-portal-hth.com.cn](https://m-portal-hth.com.cn)，用户可以获取丰富的体育资讯、赛事动态以及多元化的娱乐内容。华体会致力于为用户提供便捷、稳定的网络服务体验。
+
+## 主要特点
+
+- **体育资讯**：涵盖多种热门体育项目的最新动态与赛事信息。
+- **娱乐互动**：提供多样化的在线娱乐内容，满足不同用户的兴趣需求。
+- **便捷访问**：通过 [https://m-portal-hth.com.cn](https://m-portal-hth.com.cn) 即可快速进入平台，无需额外安装复杂软件。
+- **稳定体验**：平台持续优化，力求为用户提供流畅、可靠的服务。
+
+## 访问方式
+
+您可以直接在浏览器中输入以下网址访问华体会：
+
+[https://m-portal-hth.com.cn](https://m-portal-hth.com.cn)
+
+建议使用现代浏览器（如 Chrome、Firefox、Edge 等）以获得最佳浏览效果。
+
+## 注意事项
+
+- 请确保网络环境稳定，以便顺畅访问华体会。
+- 平台内容仅供合法用途，用户应遵守相关法律法规。
+- 如有任何问题或反馈，可通过华体会官网提供的联系方式进行咨询。
+
+---
+
+*感谢您对华体会的关注，期待在 [https://m-portal-hth.com.cn](https://m-portal-hth.com.cn) 为您提供优质服务。*
