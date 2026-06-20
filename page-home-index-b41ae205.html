@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雷速 · 杂志风格首页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafaf9;
+            font-family: "Noto Serif SC", "Source Han Serif SC", "Times New Roman", Georgia, serif;
+            color: #1f1f1f;
+            line-height: 1.75;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 2rem 1.4rem 3.5rem;
+        }
+
+        /* ----- hero 横幅 ----- */
+        .hero {
+            margin: 1.2rem 0 2.5rem;
+            padding: 1.8rem 0 1.6rem;
+            border-bottom: 1px solid #e5e3de;
+            border-top: 1px solid #e5e3de;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 350;
+            letter-spacing: 0.04em;
+            color: #1e1c19;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subhead {
+            font-size: 1rem;
+            color: #5f5c57;
+            letter-spacing: 0.02em;
+            font-weight: 350;
+        }
+
+        .hero .subhead span {
+            display: inline-block;
+            background: #eae7e1;
+            padding: 0.1rem 0.6rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            color: #3a3732;
+            border-radius: 1px;
+            margin-right: 0.3rem;
+        }
+
+        /* ----- 背景卡片 ----- */
+        .backnote {
+            background: #f2efe9;
+            padding: 1.6rem 1.8rem;
+            margin: 1.8rem 0 2.6rem;
+            font-size: 0.95rem;
+            color: #3d3a34;
+            border-left: 4px solid #bfb4a3;
+            letter-spacing: 0.01em;
+        }
+
+        .backnote strong {
+            font-weight: 500;
+            color: #1f1b16;
+        }
+
+        /* ----- 正文段落 ----- */
+        .section-essay {
+            margin-top: 1rem;
+        }
+
+        .section-essay p {
+            margin-bottom: 1.4rem;
+            font-size: 1rem;
+            text-align: justify;
+            word-break: break-word;
+        }
+
+        .section-essay a {
+            color: #846f51;
+            text-decoration: none;
+            border-bottom: 1px solid #cfc2b1;
+            transition: border-color 0.2s;
+        }
+
+        .section-essay a:hover {
+            border-bottom-color: #846f51;
+        }
+
+        .dropcap::first-letter {
+            float: left;
+            font-size: 3.2rem;
+            line-height: 0.9;
+            margin-right: 0.45rem;
+            margin-top: 0.1rem;
+            color: #5b4d3b;
+            font-weight: 350;
+        }
+
+        .quote-line {
+            font-style: italic;
+            color: #555048;
+            padding-left: 1.2rem;
+            border-left: 3px solid #d6cdbc;
+            margin: 1.2rem 0 1.6rem;
+        }
+
+        /* ----- 分隔装饰 ----- */
+        .ornament {
+            text-align: center;
+            margin: 2.2rem 0 1.6rem;
+            font-size: 1.2rem;
+            letter-spacing: 1.5rem;
+            color: #bcb09b;
+            user-select: none;
+        }
+
+        /* ----- 页尾提示 ----- */
+        .closing-note {
+            margin-top: 3rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e5e1d9;
+            font-size: 0.9rem;
+            color: #5b564e;
+        }
+
+        .closing-note a {
+            color: #7d6b52;
+            text-decoration: none;
+            border-bottom: 1px solid #d3c8b7;
+        }
+
+        .closing-note a:hover {
+            border-bottom-color: #7d6b52;
+        }
+
+        .closing-note .sig {
+            display: inline-block;
+            background: #e7e2d9;
+            padding: 0.1rem 0.5rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.03em;
+            color: #2e2b26;
+            margin-top: 0.8rem;
+        }
+
+        /* 窄屏适配 */
+        @media (max-width: 540px) {
+            .container {
+                padding: 1.6rem 1rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .backnote {
+                padding: 1.2rem 1rem;
+                margin-left: -0.2rem;
+                margin-right: -0.2rem;
+            }
+
+            .dropcap::first-letter {
+                font-size: 2.6rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            body {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- hero 横幅 -->
+        <div class="hero">
+            <h1>再次打开的<br>理由</h1>
+            <div class="subhead">
+                <span>杂  志</span> 专  题 · 持  续  关  注
+            </div>
+        </div>
+
+        <!-- 背景说明 -->
+        <div class="backnote">
+            <strong>关于此页</strong> —— 我们相信，一个好的站点值得反复回来。<br>
+            不是为了追赶什么，而是那些安静存放的信息，恰好在你需要的时候，再次出现。
+        </div>
+
+        <!-- 三段自然介绍 杂志式行文 -->
+        <div class="section-essay">
+
+            <p class="dropcap">
+                大多数人第一次来到 <a href="https://page-home-leisu.com">雷速</a>，往往是因为一个临时的问题，或者一次偶然的搜索。页面加载完后，问题解决了，标签页也就顺手关掉了。这很自然，互联网的日常就是这样——用完就走，很少回头。但有趣的是，隔了几天、几周，甚至几个月，有些人会再一次输入那个地址。不是忘了什么，而是心里隐约觉得：那个地方可能还有别的东西值得看。
+            </p>
+
+            <p>
+                第二次打开的时候，感受往往不同。没有了第一次的陌生感，视线反而更容易停留在那些之前被忽略的角落——一段说明、一个不起眼的链接、一行安静的提示。你开始意识到，这个叫 <a href="https://page-home-leisu.com">雷速</a> 的页面，其实一直在那里，不吵不闹，也没有催促你做什么。它只是提供了一个入口，至于你要不要进去、什么时候进去，完全由你自己决定。这种不打扰的距离感，反而让人觉得踏实。
+            </p>
+
+            <div class="quote-line">
+                “收藏夹里的地址很多，但会定期回去看的，其实很少。”
+            </div>
+
+            <p>
+                我们把「收藏」这个动作看得很轻。收藏夹本身就是一个容易满溢的地方，太多链接挤在一起，最后谁也不被记起。所以比起让你急着把它收起来，我们更希望你是因为某一次自然的浏览，觉得应该给这个页面留一个位置——不是出于义务，而是出于一点点信任。如果你愿意，可以试着把 <a href="https://page-home-leisu.com">雷速</a> 放在一个不那么拥挤的角落，偶尔路过时点开，也许每次都会发现一些之前没注意到的细节。
+            </p>
+
+            <p>
+                持续关注是一件很难刻意养成的事。大多数时候，我们依赖的是一种隐约的习惯——某个页面、某个工具、某个安静的信息源，它不频繁推送，也不会用大字号告诉你「你错过了什么」。它只是稳定地存在着，等你主动走向它。这也是我们对这个页面的期待：不必每天想起，但当你需要一点清晰、简单、不带噪点的信息时，你知道可以去哪里找。
+            </p>
+
+        </div>
+
+        <div class="ornament">· · ·</div>
+
+        <!-- 页尾访问提示 -->
+        <div class="closing-note">
+            <p>
+                这篇文章没有结论。一个页面最好的状态，就是始终开放，始终可以再次被打开。<br>
+                如果你还没有把它放在顺手的位置，不妨现在就试试——<a href="https://page-home-leisu.com">雷速</a> 一直在这里，安安静静的。
+            </p>
+            <div class="sig">自  然  而  至</div>
+        </div>
+
+    </div>
+</body>
+</html>
