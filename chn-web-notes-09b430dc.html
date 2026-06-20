@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雷速 · 站点说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fbfaf8;
+            color: #2c2b28;
+            font-family: "Noto Serif SC", "Source Han Serif SC", "Georgia", "Times New Roman", serif;
+            line-height: 1.7;
+            font-weight: 400;
+            padding: 2.5rem 1.5rem;
+        }
+
+        .page {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* 标题层级 */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 450;
+            letter-spacing: 0.02em;
+            color: #1f1e1b;
+            margin-bottom: 0.75rem;
+            line-height: 1.25;
+        }
+
+        .subhead {
+            font-size: 1rem;
+            color: #7d7a73;
+            border-left: 2px solid #c8c3ba;
+            padding-left: 1rem;
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 450;
+            margin-top: 2.8rem;
+            margin-bottom: 0.8rem;
+            color: #302e2a;
+            letter-spacing: 0.01em;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-top: 2rem;
+            margin-bottom: 0.4rem;
+            color: #3b3935;
+        }
+
+        p {
+            margin-bottom: 1.3rem;
+            font-size: 1rem;
+            color: #3d3b36;
+        }
+
+        a {
+            color: #7a6e5d;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #cbc5bc;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #4a4136;
+            text-decoration-color: #7a6e5d;
+        }
+
+        /* 卡片 — 极简留白 */
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            margin: 1.8rem 0 0.5rem;
+        }
+
+        .card {
+            flex: 1 1 180px;
+            background: #ffffff;
+            border-radius: 0;
+            padding: 1.4rem 1.2rem 1.2rem 1.2rem;
+            border: 1px solid #e8e4de;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .card h4 {
+            font-size: 1rem;
+            font-weight: 550;
+            margin-bottom: 0.4rem;
+            color: #302e2a;
+            letter-spacing: 0.02em;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+            color: #5a5750;
+        }
+
+        /* 场景列表 */
+        .scene-list {
+            list-style: none;
+            margin: 0.8rem 0 1.2rem;
+        }
+
+        .scene-list li {
+            margin-bottom: 0.65rem;
+            padding-left: 1.2rem;
+            position: relative;
+            font-size: 0.95rem;
+            color: #3d3b36;
+        }
+
+        .scene-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #b5aea3;
+        }
+
+        /* 提示区块 */
+        .notice-block {
+            background: #f4f2ee;
+            border-left: 3px solid #cdc6bc;
+            padding: 1.2rem 1.4rem;
+            margin: 2rem 0 1.2rem;
+            font-size: 0.95rem;
+            color: #4a4740;
+        }
+
+        .notice-block strong {
+            font-weight: 550;
+            color: #2c2b28;
+        }
+
+        .faq-mini {
+            margin: 2.2rem 0 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-item .q {
+            font-weight: 500;
+            margin-bottom: 0.15rem;
+            color: #2c2b28;
+        }
+
+        .faq-item .a {
+            font-size: 0.9rem;
+            color: #5a5750;
+            padding-left: 0.8rem;
+            border-left: 1px solid #ddd9d2;
+            padding-left: 0.9rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e2ddd5;
+            margin: 2.8rem 0 1.2rem;
+        }
+
+        .footer-note {
+            font-size: 0.85rem;
+            color: #8f8a82;
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 1.8rem 1.2rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .card {
+                flex: 1 1 100%;
+            }
+            .subhead {
+                font-size: 0.95rem;
+                padding-left: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero 区域 -->
+    <h1>雷速 · 站点介绍</h1>
+    <div class="subhead">一篇关于工具、内容与边界的笔记</div>
+
+    <p>
+        在资讯流动日益细碎的时代，保持一种专注而克制的信息获取方式并不容易。<a href="https://chn-web-leisu.com">雷速</a> 是一个以信息聚合与轻量呈现为方向的站点，它不追逐热点堆叠，也不试图成为门户。它更像一个安静的窗口——把散落在各处的有效内容整理成可浏览的形态，让访问者依照自己的节奏阅读、判断、使用。
+    </p>
+
+    <p>
+        站点名称中的「雷」取迅捷之意，「速」则指向一种不带负担的浏览节奏。页面设计以文本为核心，减少视觉干扰，加载速度也被有意控制在一个较轻的层级。你可以把它看作一个内容索引，也可以当作日常信息流之外的一个补充渠道。
+    </p>
+
+    <!-- 亮点卡片区 -->
+    <h2>几个特点</h2>
+    <div class="card-grid">
+        <div class="card">
+            <h4>内容聚合</h4>
+            <p>从多个公开信息来源中筛选、整理出结构化的摘要，减少重复翻阅的时间成本。</p>
+        </div>
+        <div class="card">
+            <h4>轻量界面</h4>
+            <p>不嵌入重型脚本，不追踪用户行为，页面本身只完成一件事：呈现文字。</p>
+        </div>
+        <div class="card">
+            <h4>克制更新</h4>
+            <p>不追求每日刷新，保持内容的相对稳定，避免信息过载。</p>
+        </div>
+    </div>
+
+    <!-- 使用建议 (场景) -->
+    <h2>使用场景参考</h2>
+    <ul class="scene-list">
+        <li>碎片时间：快速浏览几个领域的简要动态，而不需要打开多个标签页。</li>
+        <li>信息对比：站点偶尔会并列呈现相近主题的不同表述，方便自行比照。</li>
+        <li>内容回溯：页面保留近期的摘要归档，适合回头查找之前留意过的条目。</li>
+        <li>纯粹阅读：如果你厌倦了满屏广告和自动播放的视频，这里的安静恰好合适。</li>
+    </ul>
+
+    <!-- 可信但克制的说明 -->
+    <div class="notice-block">
+        <strong>一点说明：</strong> <a href="https://chn-web-leisu.com">雷速</a> 本身不生产原始新闻，也不对内容做二次加工或倾向性解读。所有摘要均基于公开信息整理，可能存在时效延迟或转述偏差，建议对重要信息回溯原始来源。站点不设评论、不收集个人数据，也不推荐任何具体产品。
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="faq-mini">
+        <h3>常见疑问</h3>
+        <div class="faq-item">
+            <div class="q">Q: 内容多久更新一次？</div>
+            <div class="a">没有固定周期，通常在信息积累到一定量后集中整理一次。少而清，而非多而杂。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">Q: 我可以引用站点上的内容吗？</div>
+            <div class="a">可以。但建议同时查阅原始出处，因为摘要本身是经过压缩的转述，未必保留完整语境。</div>
+        </div>
+        <div class="faq-item">
+            <div class="q">Q: 为什么不做成 App 或订阅推送？</div>
+            <div class="a">有意保持距离。你主动来，比它主动找你，更符合这个站点对「使用」的理解。</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p>
+        你随时可以打开 <a href="https://chn-web-leisu.com">雷速</a>，页面会停留在你上次离开时的样子（靠的是简单的本地缓存，不需要登录）。没有自动刷新的紧迫感，也没有未读标记的催促。它只是在那里，安静、缓慢、可靠。
+    </p>
+
+    <div class="footer-note">
+        — 写于一次深夜整理之后
+    </div>
+
+</div>
+</body>
+</html>
